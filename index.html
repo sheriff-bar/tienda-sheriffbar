@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Sheriff Bar - Tienda</title>
+
+<style>
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+    /* LOGO COMO FONDO COMPLETO */
+    background-image: url("logo.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;   /* 🔥 OCUPA TODO EL FONDO */
+    background-attachment: fixed;
+
+    background-color: #fff;
+}
+
+/* ===== HEADER ===== */
+/* ===== ENCABEZADO ===== */
+    header {
+      background: black;
+      padding: 15px 30px;
+    }
+
+    .header-content{
+    display: flex;
+    align-items: center;
+    justify-content: center; /* CENTRA TODO */
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    left: 30px; /* logo a la izquierda */
+    height: 70px;
+}
+
+.titulo{
+    color: white;        /* letras blancas */
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+/* ===== CONTENEDOR ===== */
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+	
+}
+
+/* ===== SECCIONES ===== */
+h2{
+     margin-top:40px;
+    border-bottom:2px solid rgba(255,255,255,0.6);
+    padding-bottom:5px;
+    color: #ffffff;          /* 🔥 TEXTO BLANCO */
+	
+}
+
+/* ===== GRID 4 POR FILA ===== */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+	
+}
+
+/* ===== TARJETA ===== */
+.card{
+    background:white;
+    border-radius:10px;
+    padding:12px;
+    text-align:center;
+    box-shadow:0 0 8px rgba(0,0,0,.15);
+}
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+}
+.card input{
+    width:60px;
+    padding:5px;
+}
+.card button{
+    width:100%;
+    margin-top:8px;
+    padding:8px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+.card button:hover{
+    background:#0056b3;
+}
+
+/* ===== PEDIDO ===== */
+.pedido{
+    background:white;
+    margin-top:40px;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 8px rgba(0,0,0,.15);
+}
+.total{
+    font-size:18px;
+    font-weight:bold;
+}
+//TARGETA//
+}
+.about-section{
+	padding: 50px;
+	background-color: ;
+	text-align: center;
+}
+.about-section p {
+	font-size: 18px;
+}
+.contact-section {
+    padding: 50px;
+    background-color: Black;
+    text-align: center;
+}
+.contact-section p {
+	font-size: 18px
+	;
+}
+.tarjeta {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+	
+}
+img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-content">
+    <img src="logo.jpeg" class="logo" alt="Logo Sheriff-Bar">
+
+    <h1 class="titulo">SHERIFF-BAR</h1>
+  </div>
+</header>
+
+<div class="container">
+
+<!-- ================= JOHNIE WALKER ================= -->
+<h2>Johnnie Walker</h2>
+<div class="grid">
+
+<div class="card"><img src="1.jpg"><h4>Rojo 750ml</h4><p>$23</p><input id="jw1" type="number" min="0" value="0"><button onclick="agregar('JW Rojo 750ml',23,'jw1')">Agregar</button></div>
+<div class="card"><img src="2.jpg"><h4>Rojo Litro</h4><p>$28</p><input id="jw2" type="number" min="0" value="0"><button onclick="agregar('JW Rojo Litro',28,'jw2')">Agregar</button></div>
+<div class="card"><img src="3.jpg"><h4>Negro 750ml</h4><p>$45</p><input id="jw3" type="number" min="0" value="0"><button onclick="agregar('JW Negro 750ml',45,'jw3')">Agregar</button></div>
+<div class="card"><img src="4.jpg"><h4>Negro Litro</h4><p>$58</p><input id="jw4" type="number" min="0" value="0"><button onclick="agregar('JW Negro Litro',58,'jw4')">Agregar</button></div>
+
+<div class="card"><img src="5.jpg"><h4>Verde 750ml</h4><p>$58</p><input id="jw5" type="number" min="0" value="0"><button onclick="agregar('JW Verde 750ml',58,'jw5')">Agregar</button></div>
+<div class="card"><img src="6.jpg"><h4>Verde Litro</h4><p>$69</p><input id="jw6" type="number" min="0" value="0"><button onclick="agregar('JW Verde Litro',69,'jw6')">Agregar</button></div>
+<div class="card"><img src="7.jpg"><h4>Gold 750ml</h4><p>$68</p><input id="jw7" type="number" min="0" value="0"><button onclick="agregar('JW Gold 750ml',68,'jw7')">Agregar</button></div>
+<div class="card"><img src="8.jpg"><h4>Gold Litro</h4><p>$80</p><input id="jw8" type="number" min="0" value="0"><button onclick="agregar('JW Gold Litro',80,'jw8')">Agregar</button></div>
+
+<div class="card"><img src="9.jpg"><h4>Double Black 750ml</h4><p>$53</p><input id="jw9" type="number" min="0" value="0"><button onclick="agregar('JW Double Black 750ml',53,'jw9')">Agregar</button></div>
+<div class="card"><img src="10.jpg"><h4>Double Black Litro</h4><p>$68</p><input id="jw10" type="number" min="0" value="0"><button onclick="agregar('JW Double Black Litro',68,'jw10')">Agregar</button></div>
+<div class="card"><img src="11.jpg"><h4>Platinum 750ml</h4><p>$95</p><input id="jw11" type="number" min="0" value="0"><button onclick="agregar('JW Platinum 750ml',95,'jw11')">Agregar</button></div>
+<div class="card"><img src="12.jpg"><h4>Platinum Litro</h4><p>$115</p><input id="jw12" type="number" min="0" value="0"><button onclick="agregar('JW Platinum Litro',115,'jw12')">Agregar</button></div>
+
+<div class="card"><img src="13.jpg"><h4>Azul 750ml</h4><p>$300</p><input id="jw13" type="number" min="0" value="0"><button onclick="agregar('JW Azul 750ml',300,'jw13')">Agregar</button></div>
+<div class="card"><img src="14.jpg"><h4>Azul Litro</h4><p>$320</p><input id="jw14" type="number" min="0" value="0"><button onclick="agregar('JW Azul Litro',320,'jw14')">Agregar</button></div>
+
+</div>
+
+<!-- ================= BUCHANAN'S ================= -->
+<color="Black"><h2>Buchanan's</h2></color>
+<div class="grid">
+
+<div class="card"><img src="15.jpg"><h4>De Luxe 750ml</h4><p>$43</p><input id="b1" type="number" min="0" value="0"><button onclick="agregar('Buchanan De Luxe 750ml',43,'b1')">Agregar</button></div>
+<div class="card"><img src="16.jpg"><h4>De Luxe Litro</h4><p>$52</p><input id="b2" type="number" min="0" value="0"><button onclick="agregar('Buchanan De Luxe Litro',52,'b2')">Agregar</button></div>
+<div class="card"><img src="17.jpg"><h4>Master 750ml</h4><p>$53</p><input id="b3" type="number" min="0" value="0"><button onclick="agregar('Buchanan Master 750ml',53,'b3')">Agregar</button></div>
+<div class="card"><img src="18.jpg"><h4>Master Litro</h4><p>$68</p><input id="b4" type="number" min="0" value="0"><button onclick="agregar('Buchanan Master Litro',68,'b4')">Agregar</button></div>
+
+<div class="card"><img src="19.jpg"><h4>Piña</h4><p>$60</p><input id="b5" type="number" min="0" value="0"><button onclick="agregar('Buchanan Piña',60,'b5')">Agregar</button></div>
+<div class="card"><img src="20.jpg"><h4>Two Souls</h4><p>$63</p><input id="b6" type="number" min="0" value="0"><button onclick="agregar('Buchanan Two Souls',63,'b6')">Agregar</button></div>
+<div class="card"><img src="21.jpeg"><h4>James</h4><p>$75</p><input id="b7" type="number" min="0" value="0"><button onclick="agregar('Buchanan James',75,'b7')">Agregar</button></div>
+<div class="card"><img src="22.jpg"><h4>Red Seal</h4><p>$60</p><input id="b8" type="number" min="0" value="0"><button onclick="agregar('Buchanan Red Seal',60,'b8')">Agregar</button></div>
+
+</div>
+
+<!-- ================= CHIVAS ================= -->
+<h2>Chivas Regal</h2>
+<div class="grid">
+
+<div class="card"><img src="23.jpg"><h4>Chivas 12 750ml</h4><p>$40</p><input id="c1" type="number" min="0" value="0"><button onclick="agregar('Chivas 12 750ml',40,'c1')">Agregar</button></div>
+<div class="card"><img src="24.jpg"><h4>Chivas 12 Litro</h4><p>$45</p><input id="c2" type="number" min="0" value="0"><button onclick="agregar('Chivas 12 Litro',45,'c2')">Agregar</button></div>
+<div class="card"><img src="25.jpg"><h4>Chivas 13 Litro</h4><p>$50</p><input id="c3" type="number" min="0" value="0"><button onclick="agregar('Chivas 13 Litro',50,'c3')">Agregar</button></div>
+<div class="card"><img src="26.jpg"><h4>Chivas 15</h4><p>$68</p><input id="c4" type="number" min="0" value="0"><button onclick="agregar('Chivas 15',68,'c4')">Agregar</button></div>
+<div class="card"><img src="27.jpg"><h4>Chivas 18 Litro</h4><p>$82</p><input id="c5" type="number" min="0" value="0"><button onclick="agregar('Chivas 18 Litro',82,'c5')">Agregar</button></div>
+
+</div>
+
+<!-- ================= OLD PARR ================= -->
+<h2>Old Parr</h2>
+<div class="grid">
+
+<div class="card"><img src="28.jpg"><h4>Old Parr 750ml</h4><p>$45</p><input id="o1" type="number" min="0" value="0"><button onclick="agregar('Old Parr 750ml',45,'o1')">Agregar</button></div>
+<div class="card"><img src="29.jpg"><h4>Old Parr Litro</h4><p>$52</p><input id="o2" type="number" min="0" value="0"><button onclick="agregar('Old Parr Litro',52,'o2')">Agregar</button></div>
+
+</div>
+
+<!-- ================= SWING ================= -->
+<h2>Swing</h2>
+<div class="grid">
+
+<div class="card"><img src="30.jpg"><h4>Swing</h4><p>$55</p><input id="s1" type="number" min="0" value="0"><button onclick="agregar('Swing',55,'s1')">Agregar</button></div>
+
+</div>
+<!-- ================= SOMETHING SPECIAL ================= -->
+<h2>Something Special</h2>
+<div class="grid">
+
+<div class="card"><img src="31.jpg"><h4>Something Special 750ml</h4><p>$22</p>
+<input id="ss1" type="number" min="0" value="0">
+<button onclick="agregar('Something Special 750ml',22,'ss1')">Agregar</button></div>
+
+<div class="card"><img src="32.jpg"><h4>Something Special Litro</h4><p>$27</p>
+<input id="ss2" type="number" min="0" value="0">
+<button onclick="agregar('Something Special Litro',27,'ss2')">Agregar</button></div>
+
+</div>
+<!-- ================= JACK DANIEL'S ================= -->
+<h2>Jack Daniel's</h2>
+<div class="grid">
+
+<div class="card"><img src="33.jpg"><h4>Jack Daniel's apple</h4><p>Pregunte por el stock </p>
+<input id="jd1" type="number" min="0" value="0">
+<button onclick="agregar('Jack Daniels Old No.7 750ml',,'jd1')">Agregar</button></div>
+
+<div class="card"><img src="34.jpg"><h4>Jack Daniel's tennessee</h4><p>Pregunte por el stock</p>
+<input id="jd2" type="number" min="0" value="0">
+<button onclick="agregar('Jack Daniels Old No.7 Litro',,'jd2')">Agregar</button></div>
+
+<div class="card"><img src="35.jpg"><h4>Jack Daniel's Honey</h4><p>Pregunte por el stock</p>
+<input id="jd3" type="number" min="0" value="0">
+<button onclick="agregar('Jack Daniels Honey',,'jd3')">Agregar</button></div>
+
+<div class="card"><img src="36.jpg"><h4>Jack Daniel's Fire</h4><p>Pregunte por el stock</p>
+<input id="jd4" type="number" min="0" value="0">
+<button onclick="agregar('Jack Daniels Fire',,'jd4')">Agregar</button></div>
+
+
+</div>
+
+<!-- ================= PEDIDO ================= -->
+<div class="pedido">
+<h2>🧾 Tu Pedido</h2>
+<div id="lista"></div>
+<p class="total">Total: $<span id="total">0</span></p>
+
+<input type="text" id="telefono" placeholder="Tu número de teléfono">
+<br><br>
+<button onclick="enviarPedido()">Enviar pedido por WhatsApp</button>
+</div>
+
+</div>
+<!-- Sección de Contacto -->
+<section id="contact" class="contact-section">
+   <h2>Contáctanos</h2>
+
+</a></p>
+</section>
+<div class="tarjeta">
+        <img src="logo.jpeg" alt="Tu foto">
+        <h2>SHERIFF-BAR</h2>
+        <p>lm915985@gmail.com</p>
+        <p> 0999133861</p>
+		</a></p>
+    </div>
+<script>
+let pedido = {};
+let total = 0;
+
+function agregar(nombre, precio, input){
+    const cantidad = parseInt(document.getElementById(input).value);
+    if(cantidad <= 0){
+        alert("Ingrese cantidad");
+        return;
+    }
+    pedido[nombre] = {precio, cantidad};
+    calcular();
+}
+
+function calcular(){
+    total = 0;
+    let html = "";
+    for(let p in pedido){
+        let sub = pedido[p].precio * pedido[p].cantidad;
+        total += sub;
+        html += `${p} x ${pedido[p].cantidad} = $${sub}<br>`;
+    }
+    document.getElementById("lista").innerHTML = html;
+    document.getElementById("total").innerText = total;
+}
+
+function enviarPedido(){
+    const tel = document.getElementById("telefono").value;
+    if(tel === ""){
+        alert("Ingrese su teléfono");
+        return;
+    }
+
+    let msg = "Hola SHERIFF-BAR, mi pedido es:%0A";
+
+    for(let p in pedido){
+        msg += `${p} x ${pedido[p].cantidad}%0A`;
+    }
+
+    msg += `Total: $${total}%0ATeléfono: ${tel}`;
+	
+    window.open("https://wa.me/593999133861?text=" + msg, "_blank");
+}
+</script>
+
+</body>
+</html>
