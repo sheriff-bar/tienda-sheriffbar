@@ -5,6 +5,33 @@
 <title>Sheriff Bar - Tienda</title>
 
 <style>
+    /* BOTÓN WHATSAPP GRANDE Y VERDE */
+.btn-whatsapp {
+    width: 100%;                /* ocupa toda la sección */
+    padding: 18px;              /* botón grande */
+    font-size: 20px;            /* letra grande */
+    background-color: #25D366;  /* verde WhatsApp */
+    color: white;               /* letras blancas */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Efecto al pasar el mouse */
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 600px) {
+    .btn-whatsapp {
+        font-size: 18px;
+        padding: 16px;
+    }
+}
+
 body{
     margin: 0;
     font-family: Arial, sans-serif;
@@ -272,10 +299,9 @@ img{
 <h2>🧾 Tu Pedido</h2>
 <div id="lista"></div>
 <p class="total">Total: $<span id="total">0</span></p>
+<button class="btn-whatsapp" onclick="enviarWhatsApp()">
+    📲 Enviar pedido por WhatsApp
 
-<input type="text" id="telefono" placeholder="Tu número de teléfono">
-<br><br>
-<button onclick="enviarPedido()">Enviar pedido por WhatsApp</button>
 </div>
 
 </div>
